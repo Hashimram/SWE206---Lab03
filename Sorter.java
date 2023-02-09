@@ -3,6 +3,10 @@ public class Sorter {
         
     }
 
+    public void sort(int arr[]) {
+        InsertionSort(arr);
+    }
+
     public static void selectionsort(double[] list){
         for (int i = 0; i<list.length - 1; i++){
             double currentMin = list[i];
@@ -22,7 +26,7 @@ public class Sorter {
         }
     }
 
-    void InsertionSort(int arr[])
+    public void InsertionSort(int arr[])
     {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
