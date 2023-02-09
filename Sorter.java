@@ -3,9 +3,9 @@ public class Sorter {
         
     }
 
-    public static void selectionsort(double[] list){
+    public static void selectionsort(int list[]){
         for (int i = 0; i<list.length - 1; i++){
-            double currentMin = list[i];
+            int currentMin = list[i];
             int currentMinIndex = i;
 
             for (int j = i + 1; j < list.length;j++) {
@@ -20,5 +20,9 @@ public class Sorter {
                 list[i] = currentMin;
             }
         }
+    }
+
+    public static void sort(int list[]){
+        selectionsort(list);    
     }
 }
